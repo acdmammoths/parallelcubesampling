@@ -1,4 +1,9 @@
-# parallelcubesampling
+# Parallel Cube Sampling
+
+Implementations of the parallel and sequential cube sampling algorithms
+presented in the paper "*A Scalable Parallel Algorithm for Balanced Sampling*"
+(Alexander Lee, Stefan Walzer-Goldfeld, Shukry Zablah, Matteo Riondato, AAAI'22
+Student Abstract).
 
 To use our various algorithms, do the following:
 
@@ -6,8 +11,8 @@ To use our various algorithms, do the following:
 
 In order to create the virtual environment, install the dependencies, and activate it, use the following commands:
 
-```
-python3 -m venv venv 
+```sh
+python3 -m venv venv
 python3 -m pip install -r cube/requirements.txt
 source venv/bin/activate
 ```
@@ -17,7 +22,7 @@ The virtual environment must be activated in order to run any of the algorithms.
 
 ## 1. Example for running `sample_cube()`:
 
-```
+```python
 import numpy as np
 import cube
 
@@ -37,7 +42,7 @@ if __name__ == "__main__":
 
 ## 2. Example for running `sample_cube_parallel()`:
 
-```
+```python
 import numpy as np
 import cube
 
@@ -59,7 +64,7 @@ if __name__ == "__main__":
 
 ## 3. Example for running `stratified_sample_cube()`:
 
-```
+```python
 import numpy as np
 import cube
 
@@ -79,7 +84,7 @@ if __name__ == "__main__":
 
 ## 4. Example for running `parallel_stratified_sample_cube()`:
 
-```
+```python
 import numpy as np
 import cube
 
@@ -102,6 +107,6 @@ if __name__ == "__main__":
 
 Our test suite can run using the following command (the virtual environment must be activated):
 
-```
+```sh
 python3 src/test_cube.py
 ```
