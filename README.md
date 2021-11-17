@@ -22,11 +22,11 @@ import numpy as np
 import cube
 
 if __name__ == "__main__":
-    pop_size, num_aux_var = 100, 10
-    data = np.random.random((pop_size, num_aux_var))
-    init_probs = np.random.random(pop_size)
+  pop_size, num_aux_var = 100, 10
+  data = np.random.random((pop_size, num_aux_var))
+  init_probs = np.random.random(pop_size)
 
-    sample = cube.sample_cube(data, init_probs)
+  sample = cube.sample_cube(data, init_probs)
 ```
 
 `sample_cube()` also has the following optional arguments:
@@ -42,12 +42,12 @@ import numpy as np
 import cube
 
 if __name__ == "__main__":
-    pop_size, num_aux_var = 100, 10
-    num_proc = 4
-    data = np.random.random((pop_size, num_aux_var))
-    init_probs = np.random.random(pop_size)
+  pop_size, num_aux_var = 100, 10
+  num_proc = 4
+  data = np.random.random((pop_size, num_aux_var))
+  init_probs = np.random.random(pop_size)
 
-    sample = cube.sample_cube_parallel(data, init_probs, num_proc)
+  sample = cube.sample_cube_parallel(data, init_probs, num_proc)
 ```
 
 `sample_cube_parallel()` also has the following optional arguments:
@@ -64,13 +64,13 @@ import numpy as np
 import cube
 
 if __name__ == "__main__":
-    pop_size, num_aux_var = 100, 10
-    num_strata = 7
-    data = np.random.random((pop_size, num_aux_var))
-    init_probs = np.random.random(pop_size)
-    strata = np.array([i % num_strata for i in range(pop_size)])
+  pop_size, num_aux_var = 100, 10
+  num_strata = 7
+  data = np.random.random((pop_size, num_aux_var))
+  init_probs = np.random.random(pop_size)
+  strata = np.array([i % num_strata for i in range(pop_size)])
 
-    sample = cube.stratified_sample_cube(data, init_probs, strata)
+  sample = cube.stratified_sample_cube(data, init_probs, strata)
 ```
 
 `stratified_sample_cube()` also has the following optional arguments:
@@ -84,14 +84,14 @@ import numpy as np
 import cube
 
 if __name__ == "__main__":
-    pop_size, num_aux_var = 100, 10
-    num_strata = 7
-    num_proc = 4
-    data = np.random.random((pop_size, num_aux_var))
-    init_probs = np.random.random(pop_size)
-    strata = np.array([i % num_strata for i in range(pop_size)])
+  pop_size, num_aux_var = 100, 10
+  num_strata = 7
+  num_proc = 4
+  data = np.random.random((pop_size, num_aux_var))
+  init_probs = np.random.random(pop_size)
+  strata = np.array([i % num_strata for i in range(pop_size)])
 
-    sample = cube.parallel_stratified_sample_cube(data, init_probs, strata, num_proc)
+  sample = cube.parallel_stratified_sample_cube(data, init_probs, strata, num_proc)
 ```
 
 `parallel_stratified_sample_cube()` also has the following optional arguments:
