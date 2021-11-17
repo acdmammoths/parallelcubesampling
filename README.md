@@ -99,5 +99,5 @@ sample = parallel_stratified_sample_cube(data, init_probs, strata, num_proc)
 Our test suite can run using the following command (the virtual environment must be activated):
 
 ```
-python3 cube/test_cube.py
+python3 src/test_cube.py
 ```
