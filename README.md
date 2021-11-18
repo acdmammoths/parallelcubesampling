@@ -7,7 +7,7 @@ Student Abstract).
 
 The student abstract and supplement are linked below:
 
-- [student abstract](paper/cubesampling.pdf)
+- [student abstract](paper/student-abstract.pdf)
 - [supplement](paper/supplement.pdf)
 
 To use our various algorithms, do the following:
