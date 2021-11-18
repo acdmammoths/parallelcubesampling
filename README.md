@@ -5,6 +5,11 @@ presented in the paper "*A Scalable Parallel Algorithm for Balanced Sampling*"
 (Alexander Lee, Stefan Walzer-Goldfeld, Shukry Zablah, Matteo Riondato, AAAI'22
 Student Abstract).
 
+The student abstract and supplement are linked below:
+
+- [student abstract](paper/cubesampling.pdf)
+- [supplement](paper/supplement.pdf)
+
 To use our various algorithms, do the following:
 
 ## Creating the virtual environment
